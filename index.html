@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <div class="container">
+      <input type="text"  id="input" name="display" value=""/>
+        <table>
+        <tr class="row1">
+          <td class="key">7</td>
+          <td class="key">8</td>
+          <td class="key">9</td>
+          <td onclick="del()"><img src="Assets/backspace.png" width="17px"/> </td>  
+        </tr>
+        <tr class="row2">
+            <td class="key">4</td>
+            <td class="key">5</td>
+            <td class="key">6</td>
+            <td class="key">+</td>
+        </tr>
+        <tr class="row3">
+            <td class="key">1</td>
+            <td class="key">2</td>
+            <td class="key">3</td>
+            <td class="key">-</td>
+        </tr>
+        <tr class="row4">
+            <td class="key" id="dec">.</td>
+            <td class="key">0</td>
+            <td class="key" > / </td>
+            <td class="key" > * </td>
+        </tr>
+        <tr class="row5">
+            <td onclick="reset()">reset</td>
+            <td onclick="result()">=</td>
+        </tr>
+        </table>
+    </div>
+    
+<script src="script.js"></script> 
+</body>
+</html>
