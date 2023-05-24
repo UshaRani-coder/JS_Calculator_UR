@@ -1,11 +1,8 @@
 let input = document.querySelector("#input");
 let no_keys = document.querySelectorAll(".key");
-let audio = new Audio('mixkit-opening-software-interface-2578.wav');
 no_keys.forEach(e=>{
     e.addEventListener("click",()=>{
       input.value += e.textContent;
-      audio.play();
-
     });
 })
 
